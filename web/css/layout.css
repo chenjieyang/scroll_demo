@@ -1,0 +1,67 @@
+h1, p, a, li { color:#CCCCCC; font-family: Verdana, sans-serif; }
+p, a, li { font-size:12px; font-weight:bold; }
+ul{ border:0px; padding:0px 0px 0px 20px; margin:0px; }
+li{ border:0px; padding:0px; margin:0px; }
+body { width:100%; height:auto; background:#000; border:0px; margin:0px; padding:0px; /*overflow:hidden;*/ cursor:crosshair !important; }
+
+.debug03 { border:1px solid #00cc00 !important; }
+
+.container { position:relative; float:left; width:100%; height:auto; border:0px; padding:0px; margin:0px; text-align:center; }
+.container .top { position:relative; width:1000px; height:auto; border:0px; padding:0px; margin:0px auto 0px auto; }
+.container .top .logo { position:relative; float:left; width:400px; height:75px; border:0px; padding:0px; margin:0px 0px 20px 0px; color:#FFFFFF; text-align:center; }
+.container .top .logo a { font:normal 30px/75px Verdaba; }
+.container .top .links { position:relative; float:right; width:400px; height:75px; border:0px; padding:0px; margin:0px 0px 20px 0px; color:#FFFFFF; text-align:center; }
+.container .top .links a { font:normal 30px/75px Verdaba; }
+.container .top .statement { position:absolute; left:0px; top:66px; width:100%; height:28px; border:0px; padding:0px; margin:0px; font:normal 12px/28px Verdana; color:#FFFFFF; text-align:center;  }
+.container .top .nav { position:relative; float:left; width:1000px; height:35px; background:url(../imgs/bg_nav.png) repeat-x; border:0px; padding:0px; margin:0px; border-radius:10px; -moz-border-radius:10px; text-align:left; }
+.container .top .nav a { font:normal 20px/35px Verdaba; margin:0px 0px 0px 10px; }
+.container .break { clear:both; }
+
+.container .mid { position:relative; float:left; width:100%; height:100%; border:0px; padding:0px; margin:0px; text-align:center; }
+.container .mid .scroller_row { position:relative; float:left; width:100%; height:219px; background:#000000; border:0px; padding:0px; margin:0px; overflow:hidden; text-align:center; }
+.container .mid .scroller_row .load_status { position:relative; width:100%; height:auto; border:0px; padding:0px; margin:0px; color:#FFF; font:normal 30px/219px Verdana; }
+.container .mid .scroller_row .bnds_lft { position:absolute; z-index:1; left:5px; top:0px; width:1px; height:160px; background:#FF0000; opacity:1.00; border:0px; padding:0px; margin:0px; visibility:hidden; }
+.container .mid .scroller_row .center_box { position:absolute; z-index:1; left:50%; top:0px; width:110px; height:160px; background:#FF0000; opacity:1.00; border:0px; padding:0px; margin:5px 0px 5px -55px; visibility:hidden; }
+.container .mid .scroller_row .bnds_rgt { position:absolute; z-index:1; right:5px; top:0px; width:1px; height:160px; background:#FF0000; opacity:1.00; border:0px; padding:0px; margin:0px; visibility:hidden; }
+.container .mid .scroller_row .load_status_profiles {  background:#000; position:absolute; z-index:3; top:0px; left:0px; width:100%; height:auto; border:0px; padding:0px; margin:0px; color:#FFF; font:normal 30px/219px Verdana; } 
+.container .mid .scroller_row .cnt_profiles { position:relative; float:left; z-index:2; top:0px; left:0px; width:100%; height:auto; border:0px; padding:0px; margin:0px; /* cursor:pointer; */ overflow:hidden; } 
+.container .mid .scroller_row .cnt_profiles .scroller { position:relative; z-index:2; width:4000px; height:170px; border:0px; padding:0px; margin:0px; }
+.container .mid .scroller_row .cnt_profiles .scroller .empty_left { position:relative; float:left; width:100px; height:170px; border:0px; padding:0px; margin:0px; } 
+.container .mid .scroller_row .cnt_profiles .scroller .profiles { position:relative; float:left; width:auto; height:170px; border:0px; padding:0px; margin:0px; }
+.container .mid .scroller_row .cnt_profiles .scroller .profiles .profile { position:relative; float:left; width:110px; height:140px; border:0px; padding:0px; margin:15px 0px 15px 0px; }
+.container .mid .scroller_row .cnt_profiles .scroller .profiles .profile .profile_pic { position:relative; float:left; width:80px; height:80px; border:0px; padding:0px; margin:10px 15px 0px 15px; border-radius: 10px; -moz-border-radius:10px; }
+.container .mid .scroller_row .cnt_profiles .scroller .profiles .profile .profile_info { position:relative; float:left; width:94px; height:50px; background:#00cc00; border:0px; padding:0px; margin:0px 8px 0px 8px; text-align:left; overflow:hidden; }
+.container .mid .scroller_row .cnt_profiles .scroller .empty_right { position:relative; float:left; width:100px; height:170px; border:0px; padding:0px; margin:0px; }
+
+.container .mid .scroller_row .profile_pag_cont_outter { position:relative; float:left; left:50%; width:auto; height:auto; border:0px; padding:0px; text-align:center; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont { position:relative; float:left; left:-50%; width:auto; height:49px; background:url(../imgs/bg_pag.png) repeat-x; border:0px; padding:0px; margin:0px auto 0px auto; border-radius:10px; -moz-border-radius:10px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages { position:relative; float:left; width:630px; height:49px; border:0px; padding:0px 10px 0px 10px; margin:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_label { position:relative; float:left; width:620px; height:12px; border:0px; padding:0px; margin:0px; text-align:center; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_label a { font:normal 10px/15px Arial; color:#FFF; letter-spacing:1px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables { position:relative; float:left; width:630px; height:34px; padding:0px; border:0px; margin:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables a { color:#FFF; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables .p_inc { position:relative; float:left; line-height:26px; width:45px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables .p_first_page { position:relative; float:left; line-height:26px; width:45px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables .p_prev_page { position:relative; float:left; line-height:26px; width:45px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables .p_next_page { position:relative; float:left; line-height:26px; width:45px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables .p_last_page { position:relative; float:left; line-height:26px; width:45px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_pages .pages_interactables .p_set { position:relative; float:left; line-height:26px; width:30px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_jump { position:relative; float:left; width:90px; height:49px; border:0px; padding:0px 5px 0px 5px; margin:0px; overflow:hidden; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_jump .jump_separator { position:absolute; left:0px; top:0px; width:1px; height:49px; background:#5A5A5A repeat-y; border:0px; padding:0px; margin:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_jump .jump_label { position:relative; float:left; width:90px; height:12px; border:0px; padding:0px; margin:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_jump .jump_label a { font:normal 10px/15px Arial; color:#3d93c4; letter-spacing:1px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_jump .p_jump { position:relative; float:left; width:70px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; color:#3d93c4; margin:5px 10px 0px 10px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; text-indent:5px; letter-spacing:1px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history { position:relative; float:left; width:250px; height:49px; border:0px; padding:0px 10px 0px 10px; margin:0px; overflow:hidden; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_seperator { position:absolute; left:0px; top:0px; width:1px; height:49px; background:#5A5A5A repeat-y; border:0px; padding:0px; margin:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_label { position:relative; float:left; width:250px; height:12px; border:0px; padding:0px; margin:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_label a { font:normal 10px/15px Arial; color:#990000; letter-spacing:1px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_interactables { position:relative; float:left; width:240px; height:34px; border:0px; padding:0px; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_interactables a { color:#990000; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_interactables .p_set { position:relative; float:left; line-height:26px; width:30px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_interactables .p_set_empty { position:relative; float:left; line-height:26px; width:30px; height:24px; background:url(../imgs/bg_pag_btn.png) repeat-x; margin:5px 5px 0px 5px; padding:0px; border:0px; border-radius:5px; -moz-border-radius:5px; cursor:pointer; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_interactables .p_set_empty a { border-bottom: solid 1px #990000; }
+.container .mid .scroller_row .profile_pag_cont_outter .profile_pag_cont .pag_history .history_interactables .p_set .arrow_down{ position:absolute; left:8px; top:8px; width:13px; height:8px; background:url(../imgs/icon_arrow_down.png) no-repeat; margin:0px; padding:0px; border:0px; cursor:pointer; }
+
+.hide { display:none !important; }
+.ctrls_disabled { color:#666 !important; } 
+.whitebg { background:#FFFFFF; color:#000000 !important; }

@@ -1,0 +1,96 @@
+{
+	// after scrolling is done, adjust right most item position
+	// id holds current centered profile (ex: profile17)
+	console.log("==========================");
+	var id_left = _get_boundary_by_coordinates(bound_center_left_x, bound_center_left_y);
+	var id_right = _get_boundary_by_coordinates(bound_center_right_x, bound_center_right_y);
+	
+	var id_left_pos = Math.round(parseInt($("#"+id_left).offset().left));
+	var id_right_pos = Math.round(parseInt($("#"+id_right).offset().left));
+	console.log("id_left_pos	:"+id_left_pos+" bound_center_left_x : "+bound_center_left_x+" id_right_pos: "+id_right_pos);
+	if ((bound_center_left_x - id_left_pos) < (profile_width / 2))
+	{
+		console.log("move to prev item");
+		scroller_center = parseInt(id_left.substring(id_left.indexOf(scroller_items_id)+scroller_items_id.length));
+		console.log("scroller_center: "+scroller_center);
+		//scroller_beg = scroller_center - Math.round(scroller_items / 2) + 1;
+		//console.log("scroller_beg: "+scroller_beg);
+		//scroller_end = scroller_center + Math.round(scroller_items / 2) - 1;
+		//console.log("scroller_end: "+scroller_end);
+		var temp = "#"+scroller_items_id+scroller_center;
+		console.log("scroller_items_id: "+scroller_items_id);
+		console.log("scroller_center: "+scroller_center);
+		var id_pos = Math.round($(temp).position().left);
+		console.log("id_pos: "+id_pos);
+		var id_x = id_pos;
+		console.log("id_x: "+id_x);
+		
+
+		if (scroller_beg == 1)
+		{
+			scroller_mode_move_on = false;
+			_ctrls_fix_first_page();
+			scroller_counter = 1;
+		}
+		else
+		{
+			if (scroller_end == scroller_count)
+			{
+				scroller_mode_move_on = false;
+				_ctrls_fix_last_page();
+				scroller_counter = scroller_counter_max;
+			}
+			else
+			{
+				_ctrls_fix_enable_all();
+			}
+		}
+		
+		console.log("adjusting to left item  " + id_x +" - "+scroller_freq_extra);
+		sys.dom_scroller.scrollTo(id_x, scroller_freq_extra);
+		// sys.dom_scroller.scrollTo(id_x, scroller_freq_extra);
+	}
+	else
+	{
+		console.log("move to next item");
+		scroller_center = parseInt(id_right.substring(id_right.indexOf(scroller_items_id)+scroller_items_id.length));
+		console.log("scroller_center: "+scroller_center);
+		//scroller_beg = scroller_center - Math.round(scroller_items / 2) + 1;
+		//console.log("scroller_beg: "+scroller_beg);
+		//scroller_end = scroller_center + Math.round(scroller_items / 2) - 1;
+		//console.log("scroller_end: "+scroller_end);
+		var temp = "#"+scroller_items_id+scroller_center;
+		console.log("scroller_items_id: "+scroller_items_id);
+		console.log("scroller_center: "+scroller_center);
+		var id_pos = Math.round($(temp).position().left);
+		console.log("id_pos: "+id_pos);
+		var id_x = id_pos;
+		console.log("id_x: "+id_x);
+		
+		if (scroller_beg == 1)
+		{
+			scroller_mode_move_on = false;
+			_ctrls_fix_first_page();
+			scroller_counter = 1;
+		}
+		else
+		{
+			if (scroller_end == scroller_count)
+			{
+				scroller_mode_move_on = false;
+				_ctrls_fix_last_page();
+				scroller_counter = scroller_counter_max;
+			}
+			else
+			{
+				_ctrls_fix_enable_all();
+			}
+		}
+		console.log("adjusting to right item  " + id_x +" - "+scroller_freq_extra);
+		sys.dom_scroller.scrollTo(id_x, scroller_freq_extra);
+		// sys.dom_scroller.scrollTo(id_x, scroller_freq_extra);
+		}
+		console.log("==========================");
+	}
+	
+});
